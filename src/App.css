@@ -190,8 +190,10 @@ button.btn:hover {
 .ui {
   font-family: Krub, sans-serif;
   font-weight: 700;
-  margin-left: 50px;
-
+  position: relative;
+  left: 50px;
+  text-align: left !important;
+  z-index: -100;
 }
 
 .ui_text {
@@ -248,12 +250,12 @@ button.btn:hover {
   margin-top: -21px;
 }
 
-.person_outer {
-  display: flex;
-}
 
 .person {
-  z-index: -1;
+  margin-top: -170px;
+  margin-left: -50px;
+  z-index: -100;
+  position: relative;
 }
 
 .circle {
@@ -278,24 +280,32 @@ button.btn:hover {
 }
 
 .edit_cont {
+  position: relative;
+  left: 1205px;
+  bottom: 700px;
   content: " ";
   background: transparent;
   border: 2px #fff solid;
   z-index: -999;
   height: 105px;
   width: 180px;
-  margin-right: 55px;
-  padding-left: 35px;
+  margin-right: 50px;
+  padding-left: 25px;
   padding-top: 25px;
   margin-top: 25px;
 }
 
 .banner {
   position: relative;
-  min-height: 800px;
-  display: flex;
+  min-height: 500px;
   width: 1440px;
   justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.person_outer {
+  max-width: 660px;
   margin: 0 auto;
 }
 
@@ -304,7 +314,7 @@ button.btn:hover {
   font-family: Krub, sans-serif;
   position: absolute;
   left: 1000px;
-  top: 200px;
+  top: 250px;
 }
 
 .banner_title {
@@ -351,7 +361,7 @@ button.btn.banner_button_two {
   width: 100%;
   height: 220px;
   background-color: #121212;
-  margin-top: -90px;
+  margin-top: -200px;
   box-shadow: #000000 0 0 17px ;
   display: flex;
   align-items: center;
@@ -819,9 +829,8 @@ button.btn.button {
 }
 
 .hidden {
-  display: none;
+  visibility: hidden;
 }
-
 
 /*Feedback*/
 
@@ -862,6 +871,10 @@ button.btn.button {
   margin: 0 auto;
 }
 
+.feedback__card__quote1 {
+  float: right;
+}
+
 .feedback__card__image {
   border: #a460f9 3px solid;
   border-radius: 50%;
@@ -869,6 +882,7 @@ button.btn.button {
   height: 200px;
   overflow: hidden;
   transition-duration: .3s;
+  margin-top: 15px;
 }
 
 .feedback__card__image:hover {
@@ -1115,6 +1129,8 @@ button.btn.button {
   font-weight: 700;
 }
 
+
+
 .modal__inner {
   position: relative;
   top: 25%;
@@ -1179,4 +1195,18 @@ button.btn.button {
   position: absolute;
   left: 992px;
   top: 640px;
+}
+
+.prev {
+  display: block;
+  height: 20px;
+  width: 30px;
+  background-image: url("./assets/images/arrowprev.png");
+}
+
+.next {
+  display: block;
+  height: 20px;
+  width: 30px;
+  background-image: url("./assets/images/arrownext.png");
 }

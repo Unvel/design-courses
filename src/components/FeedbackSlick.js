@@ -12,9 +12,7 @@ const FeedbackCard = (props) => {
             <p className="feedback__card__clientName">{props.client.name}</p>
             <img src={props.client.rating} alt={"person " + props.client.id}
                  className="feedback__card__rating"/>
-            <p className="feedback__card__text"><span><img src={quote1} alt=""
-                                                           className="feedback__card__quote"/></span> {props.client.text}
-                <span><img src={quote2} alt="" className="feedback__card__quote"/></span></p>
+            <p className="feedback__card__text"><span><img src={quote1} alt=""className="feedback__card__quote"/></span> {props.client.text}<span><img src={quote2} alt="" className="feedback__card__quote1"/></span></p>
         </div>
     );
 };

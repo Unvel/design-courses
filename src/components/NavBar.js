@@ -8,7 +8,7 @@ export const NavBar = () => {
 
     const [btnState, setBtnState] = useState(false)
     const [signed, setSigned] = useState(false)
-    const toggledModal = btnState ? 'modal__outer' : 'modal__outer hidden'
+    const toggledModal = btnState ? 'modal__outer open' : 'modal__outer hidden'
     const isSigned = signed ? 'sign__text' : 'sign__text hidden'
     const buttonHandler = () => {
         setBtnState(true)
@@ -26,7 +26,7 @@ export const NavBar = () => {
             <div className={toggledModal} onClick={ModalCloseHandler}>
                 <div className="modal__inner" onClick= {e => e.stopPropagation()}>
                     <div className="modal__header">
-                        <h4 className="modal__title">sign up bitch</h4>
+                        <h4 className="modal__title">sign in</h4>
                         <button className={"closeButton"} onClick={ModalCloseHandler}><img height={32} width={32} src={closebtn} alt=""/> </button>
                     </div>
                     <div className="modal__body">

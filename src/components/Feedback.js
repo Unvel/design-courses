@@ -56,7 +56,7 @@ export const Feedback = () => {
         autoplaySpeed: 5000,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
     };
 
     return (
